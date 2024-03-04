@@ -15,6 +15,7 @@
 - Repeating(连续) characters in string
     - <span style="color:orange">[Medium]</span> [424. Longest Repeating Character Replacement](./424.%20Longest%20Repeating%20Character%20Replacement.py)
 
+---------
 
 ### Two Pointer
 1. left,right从头尾开始的比较多，宽度收缩/sort上
@@ -27,6 +28,8 @@
     - <span style="color:orange">[Medium]</span> 2422. Merge Operations to Turn Array Into a Palindrome
 - 一片区域的长宽对面积的tradeoff
     - <span style="color:orange">[Medium]</span> [11. Container With Most Water](./11.%20Container%20With%20Most%20Water.py)
+
+---------
 
 
 ### Union Find
@@ -47,12 +50,42 @@
 - xxx条件数字个数
     - <span style="color:orange">[Medium]</span> 128. Longest Consecutive Sequence
 
+---------
+
 ### Back Tracking
 ##### 应用场景
-- 组合
+- 组合Combination
+    - <span style="color:orange">[Medium]</span> 39. Combination Sum
+    - <span style="color:orange">[Medium]</span> 40. Combination Sum II
 - 子集
+    - <span style="color:orange">[Medium]</span> 78. Subsets
+- Permutation
+    - <span style="color:orange">[Medium]</span> 46. Permutations
+    - <span style="color:orange">[Medium]</span> 47. Permutations II
 - 给定patern，返回所有可组合的结果
     - <span style="color:orange">[Medium]</span> 93. Restore IP Addresses
+- 向后search，模拟测试，找最小/pattern, 重点是可撤回
+    - <span style="color:red">[Hard]</span> 465. Optimal Account Balancing [(lc)](https://leetcode.com/problems/optimal-account-balancing/description/)
+    - <span style="color:orange">[Medium]</span> 79. Word Search [(lc)](https://leetcode.com/problems/word-search/description/) (search可以回退->visited)
+
+---------
+
+### Greedy
+#### 应用场景
+- 构造固定结构(结构构造方法很死)
+    -  <span style="color:orange">[Medium]</span> [1541. Minimum Insertions to Balance a Parentheses String](./1541.%20Minimum%20Insertions%20to%20Balance%20a%20Parentheses%20String.py)
+    - <span style="color:orange">[Medium]</span> 2422. Merge Operations to Turn Array Into a Palindrome
+- 在不同时间/区间分配东西，求最少天数/capacity/长度
+    - <span style="color:orange">[Medium]</span> [1011. Capacity To Ship Packages Within D Days](./1011.%20Capacity%20To%20Ship%20Packages%20Within%20D%20Days.py)
+    - <span style="color:orange">[Medium]</span> [1405. Longest Happy String](./1405.%20Longest%20Happy%20String.py) (+heap)
+    - <span style="color:orange">[Medium]</span> 253. Meeting Rooms II (+heap)
+    - <span style="color:orange">[Medium]</span> 621. Task Scheduler (+heap)
+- 按照让接下来有更多机会选择
+    - <span style="color:orange">[Medium]</span> 45. Jump Game II (跳到reach最大的 -> 下一个有更大可选空间)
+    - <span style="color:orange">[Medium]</span> 435. Non-overlapping Intervals (按照end time最早的选择 -> 下一个有更大可选空间)
+
+---------
+
 
 ### 1D DP
 ##### 应用场景
@@ -69,6 +102,9 @@
     - <span style="color:orange">[Medium]</span> 122. Best Time to Buy and Sell Stock II
     - <span style="color:red">[Hard]</span> 123. Best Time to Buy and Sell Stock III
 
+---------
+
+
 ### 2D DP
 ##### 应用场景
 - Number/Len of palindrome => 从len=1开始构造，dp[i][j]表示考虑的子串
@@ -84,9 +120,15 @@
 - 799. Champagne Tower
 - 542. 01 Matrix
 
+---------
 
 ### Heap
+
+---------
+
+
 ### Stack
+
 
 
 
