@@ -132,6 +132,19 @@
 
 ### Stack
 
+---------
+
+### BFS
+##### 应用场景
+- 最短路径
+    1. 路径长度为1
+    2. 有obstacle / stop限制
+    3. 路径长度各不相同
+    4. dijkstra -> heap and pop min dist, not sequentially traversal (nlogn)
+    5. 多个开始点
+    - 🟡 [787. Cheapest Flights Within K Stops](./787.%20Cheapest%20Flights%20Within%20K%20Stops.py) (2 & 3 || 2 & 4) dijkstra的时候第一次遍历到dst就可以返回了
+    
+
 
 
 
