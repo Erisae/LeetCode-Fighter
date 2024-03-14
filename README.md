@@ -142,8 +142,18 @@
     3. 路径长度各不相同
     4. dijkstra -> heap and pop min dist, not sequentially traversal (nlogn)
     5. 多个开始点
+    6. modified BFS
     - 🟡 [787. Cheapest Flights Within K Stops](./787.%20Cheapest%20Flights%20Within%20K%20Stops.py) (2 & 3 || 2 & 4) dijkstra的时候第一次遍历到dst就可以返回了
-    
+    - 🔴 [2290. Minimum Obstacle Removal to Reach Corner](./2290.%20Minimum%20Obstacle%20Removal%20to%20Reach%20Corner.py) (2 & 4 || 2 & 5) dist是到(i,j)最小的obstacle数量；modified BFS 优先处理obstacle更小的路径->grid[ni][nj]==0时候直接pushleft表示无成本增加地处理下一个(shortcut)
+
+-----------
+
+### Recursion
+- 有自然顺序规律,但是遍历又过于复杂
+    - 🟡 [386. Lexicographical Numbers](./386.%20Lexicographical%20Numbers.py) formation sequence is a -> a*10 -> a+1 and you don't know how many layers you would stop
+- Smaller parts have a relationship with the whole part, divide point
+    - 🟡 [395. Longest Substring with At Least K Repeating Characters](./395.%20Longest%20Substring%20with%20At%20Least%20K%20Repeating%20Characters.py) if count(x) < k -> x would not be in finnal substring, divide on x
+
 
 
 
