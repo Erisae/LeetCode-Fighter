@@ -163,6 +163,15 @@
     - 🟡 [395. Longest Substring with At Least K Repeating Characters](./395.%20Longest%20Substring%20with%20At%20Least%20K%20Repeating%20Characters.py) if count(x) < k -> x would not be in finnal substring, divide on x
 
 
+------------
+
+### Binary Search
+##### 应用场景
+- when search can solve a problem & satisfy one-way move condition
+    - 🟡 [1062. Longest Repeating Substring](./1062.%20Longest%20Repeating%20Substring.py)
+    - 🟡 [1802. Maximum Value at a Given Index in a Bounded Array](./1802.%20Maximum%20Value%20at%20a%20Given%20Index%20in%20a%20Bounded%20Array.py)
+
+
 
 
 
