@@ -126,11 +126,19 @@
 ---------
 
 ### Heap
+- Design System
+    - 🔴 295. Find Median from Data Stream
 
 ---------
 
 
 ### Stack
+
+---------
+
+### Queue
+- Save during BFS // Design System
+    - 🟡 [919. Complete Binary Tree Inserter](./919.%20Complete%20Binary%20Tree%20Inserter.py)
 
 ---------
 
