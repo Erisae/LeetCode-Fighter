@@ -156,6 +156,15 @@
 
 -----------
 
+
+### DFS
+##### 应用场景
+- topological sort
+- 建树
+    - 🟡 [1382. Balance a Binary Search Tree](./1382.%20Balance%20a%20Binary%20Search%20Tree.py) 从inorder(increasing)构建平衡BST，直接中间split
+
+-----------
+
 ### Recursion
 - 有自然顺序规律,但是遍历又过于复杂
     - 🟡 [386. Lexicographical Numbers](./386.%20Lexicographical%20Numbers.py) formation sequence is a -> a*10 -> a+1 and you don't know how many layers you would stop
