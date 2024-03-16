@@ -133,6 +133,9 @@
 
 
 ### Stack
+##### 应用场景
+- mono stack
+    - 🟡 [2863. Maximum Length of Semi-Decreasing Subarrays.py](./2863.%20Maximum%20Length%20of%20Semi-Decreasing%20Subarrays.py) (+2ptr) 思想如果x为最佳，没有x‘小于x 能nums[x']大于nums[x]，构造可行结果的单调关系，另一边从stack取用. stack和另一侧遍历又构成shrink/expand对抗的2ptr
 
 ---------
 
