@@ -161,6 +161,7 @@
     - 🟡 [787. Cheapest Flights Within K Stops](./787.%20Cheapest%20Flights%20Within%20K%20Stops.py) (2 & 3 || 2 & 4) dijkstra的时候第一次遍历到dst就可以返回了
     - 🔴 [2290. Minimum Obstacle Removal to Reach Corner](./2290.%20Minimum%20Obstacle%20Removal%20to%20Reach%20Corner.py) (2 & 4 || 2 & 5) dist是到(i,j)最小的obstacle数量；modified BFS 优先处理obstacle更小的路径->grid[ni][nj]==0时候直接pushleft表示无成本增加地处理下一个(shortcut)
     - 🟡 [994. Rotting Oranges](./994.%20Rotting%20Oranges.py) (2 & 5)简单的传播->问传播时间
+    - 🟡 [1631. Path With Minimum Effort.py](./1631.%20Path%20With%20Minimum%20Effort.py) 不是求路径->求abs差最大的最小
 
 -----------
 
