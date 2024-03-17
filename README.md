@@ -23,7 +23,7 @@
 
 ##### 应用场景
 - 3 Sum, sort之后固定一个，后面两个分别表示最大最小，大了->移动右边，小了->移动左边
-    - 🟡 [259. 3Sum Smaller](./259.%203Sum%20Smaller.py)
+    - 🟡 [259. 3Sum Smaller](./259.%203Sum%20Smaller.py) (+binary search移动的时候)
 - 1D Palindrome
     - 🟡 2422. Merge Operations to Turn Array Into a Palindrome
 - 一片区域的长宽对面积的tradeoff
@@ -80,6 +80,7 @@
     - 🟡 [1405. Longest Happy String](./1405.%20Longest%20Happy%20String.py) (+heap)
     - 🟡 253. Meeting Rooms II (+heap)
     - 🟡 621. Task Scheduler (+heap)
+    - 🟡 [767. Reorganize String](./767.%20Reorganize%20String.py) (+heap) 区间:相邻，时间:freeze1
 - 按照让接下来有更多机会选择
     - 🟡 45. Jump Game II (跳到reach最大的 -> 下一个有更大可选空间)
     - 🟡 435. Non-overlapping Intervals (按照end time最早的选择 -> 下一个有更大可选空间)
@@ -136,6 +137,8 @@
 ##### 应用场景
 - mono stack
     - 🟡 [2863. Maximum Length of Semi-Decreasing Subarrays.py](./2863.%20Maximum%20Length%20of%20Semi-Decreasing%20Subarrays.py) (+2ptr) 思想如果x为最佳，没有x‘小于x 能nums[x']大于nums[x]，构造可行结果的单调关系，另一边从stack取用. stack和另一侧遍历又构成shrink/expand对抗的2ptr
+- parenthesis
+    - 🟡 [1249. Minimum Remove to Make Valid Parentheses](./1249.%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses.py)
 
 ---------
 
@@ -156,6 +159,7 @@
     6. modified BFS
     - 🟡 [787. Cheapest Flights Within K Stops](./787.%20Cheapest%20Flights%20Within%20K%20Stops.py) (2 & 3 || 2 & 4) dijkstra的时候第一次遍历到dst就可以返回了
     - 🔴 [2290. Minimum Obstacle Removal to Reach Corner](./2290.%20Minimum%20Obstacle%20Removal%20to%20Reach%20Corner.py) (2 & 4 || 2 & 5) dist是到(i,j)最小的obstacle数量；modified BFS 优先处理obstacle更小的路径->grid[ni][nj]==0时候直接pushleft表示无成本增加地处理下一个(shortcut)
+    - 🟡 [994. Rotting Oranges](./994.%20Rotting%20Oranges.py) (2 & 5)简单的传播->问传播时间
 
 -----------
 
@@ -165,6 +169,8 @@
 - topological sort
 - 建树
     - 🟡 [1382. Balance a Binary Search Tree](./1382.%20Balance%20a%20Binary%20Search%20Tree.py) 从inorder(increasing)构建平衡BST，直接中间split
+- path/substree
+    - 🟡 [652. Find Duplicate Subtrees](./652.%20Find%20Duplicate%20Subtrees.py) (+hash)
 
 -----------
 
@@ -182,8 +188,42 @@
 - when search can solve a problem & satisfy one-way move condition
     - 🟡 [1062. Longest Repeating Substring](./1062.%20Longest%20Repeating%20Substring.py)
     - 🟡 [1802. Maximum Value at a Given Index in a Bounded Array](./1802.%20Maximum%20Value%20at%20a%20Given%20Index%20in%20a%20Bounded%20Array.py)
+- ask to "find" and logn(1D)/mlgn(2D)
+    - 🟡 [1901. Find a Peak Element II](./1901.%20Find%20a%20Peak%20Element%20II.py) (2D: bin search on column -> on row)
+
+-------------
 
 
+### Trie
+##### 应用场景
+- sdfds
+    - 🟡 [1268. Search Suggestions System](./1268.%20Search%20Suggestions%20System.py)
+
+-------------
+
+### Prefix/Suffix
+##### 应用场景
+- product/sum
+    - 🟡 [1352. Product of the Last K Numbers](./1352.%20Product%20of%20the%20Last%20K%20Numbers.py)
+
+
+--------------
+
+### Triplet
+##### 应用场景
+- 3Sum
+- [259. 3Sum Smaller](./259.%203Sum%20Smaller.py) (sort+fix1+2ptr+bin searcg)
+- [334. Increasing Triplet Subsequence](./334.%20Increasing%20Triplet%20Subsequence.py) 顺序是关键(unsorted+1次遍历+keep两个)
+
+--------------
+### Array 
+##### 应用场景
+- sorted
+    - 3Sum
+    - [259. 3Sum Smaller](./259.%203Sum%20Smaller.py) (sort+fix1+2ptr+bin searcg)
+- unsorted  (+hash/dp) (要求O(n)) 顺序是关键
+    - [334. Increasing Triplet Subsequence](./334.%20Increasing%20Triplet%20Subsequence.py) (unsorted+1次遍历+记录到现在为止1st/2nd小)
+    - 🟡 128. Longest Consecutive Sequence
 
 
 
