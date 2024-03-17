@@ -47,8 +47,9 @@
 - 无向图是否有环检测
     - 对edges数组，如果在union(e0,e1)之前就发现e0,e1在同一个子集里面说明有环
     - 🟡 261. Graph Valid Tree
-- xxx条件数字个数
+- xxx条件数字个数/转换成连通区间个数检测
     - 🟡 128. Longest Consecutive Sequence
+    - 🟡 [947. Most Stones Removed with Same Row or Column](./947.%20Most%20Stones%20Removed%20with%20Same%20Row%20or%20Column.py)
 
 ---------
 
@@ -223,7 +224,7 @@
     - [259. 3Sum Smaller](./259.%203Sum%20Smaller.py) (sort+fix1+2ptr+bin searcg)
 - unsorted  (+hash/dp) (要求O(n)) 顺序是关键
     - [334. Increasing Triplet Subsequence](./334.%20Increasing%20Triplet%20Subsequence.py) (unsorted+1次遍历+记录到现在为止1st/2nd小)
-    - 🟡 128. Longest Consecutive Sequence
+    - 🟡 128. Longest Consecutive Sequence (start of sequential -> while end)
 
 
 
