@@ -11,6 +11,7 @@
     - 🟡 3. Longest Substring Without Repeating Characters
     - 🟡 209. Minimum Size Subarray Sum
     - 🔴 76. Minimum Window Substring
+    - 🟡 [1358. Number of Substrings Containing All Three Characters](./1358.%20Number%20of%20Substrings%20Containing%20All%20Three%20Characters.py)
 - Adjacent xx in string
 - Repeating(连续) characters in string
     - 🟡 [424. Longest Repeating Character Replacement](./424.%20Longest%20Repeating%20Character%20Replacement.py)
