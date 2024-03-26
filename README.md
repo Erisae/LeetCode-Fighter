@@ -92,9 +92,10 @@
 
 ### 1D DP
 ##### 应用场景
-- 循环中遍历前面已经生成dp生成新的路径
+- 循环中遍历前面已经生成dp生成新的路径 -> 现在为之后生成路径
     - 🟡 139. Word Break [(lc)](https://leetcode.com/problems/word-break/description/) (串<->list of words匹配)
     - 🟡 45. Jump Game II
+    - 🔴 [403. Frog Jump](./403.%20Frog%20Jump.py) (+hash, +现在jump为之后生成路径kindofdfs)
 - dp0/dp1表示当包括i和直到i的max/min，交错更新
     - 🟡 53. Maximum Subarray [(lc)](https://leetcode.com/problems/maximum-subarray/description/) (没有排序用不了2ptr和sw)
     - 🟡 152. Maximum Product Subarray
@@ -131,6 +132,8 @@
 ### Heap
 - Design System
     - 🔴 295. Find Median from Data Stream
+- Keep track of min/max current
+    - 🔴 [2263. Make Array Non-decreasing or Non-increasing](./2263.%20Make%20Array%20Non-decreasing%20or%20Non-increasing.py)
 
 ---------
 
@@ -139,6 +142,7 @@
 ##### 应用场景
 - mono stack
     - 🟡 [2863. Maximum Length of Semi-Decreasing Subarrays.py](./2863.%20Maximum%20Length%20of%20Semi-Decreasing%20Subarrays.py) (+2ptr) 思想如果x为最佳，没有x‘小于x 能nums[x']大于nums[x]，构造可行结果的单调关系，另一边从stack取用. stack和另一侧遍历又构成shrink/expand对抗的2ptr
+    - 🟡  [503. Next Greater Element II](./503.%20Next%20Greater%20Element%20II.py) 右边第一个最大的可以到前面->从右到左遍历并且min-mono->pop直到比当前大的就是next -> 来两遍
 - parenthesis
     - 🟡 [1249. Minimum Remove to Make Valid Parentheses](./1249.%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses.py)
 
