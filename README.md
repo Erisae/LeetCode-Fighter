@@ -178,6 +178,7 @@
     - 🟡 [1382. Balance a Binary Search Tree](./1382.%20Balance%20a%20Binary%20Search%20Tree.py) 从inorder(increasing)构建平衡BST，直接中间split
 - path/substree
     - 🟡 [652. Find Duplicate Subtrees](./652.%20Find%20Duplicate%20Subtrees.py) (+hash)
+    - 🔴 [2791. Count Paths That Can Form a Palindrome in a Tree](./2791.%20Count%20Paths%20That%20Can%20Form%20a%20Palindrome%20in%20a%20Tree.py) (+hash +bitmap)
 
 -----------
 
