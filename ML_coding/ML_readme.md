@@ -9,15 +9,15 @@
     - [stratified sampling](./stratified_sampling.py)
 
 - Model:
-    - [KNN]
+    - [KNN](./k_nearest_neighbors.py)
     - [k-means]
     - [binary logistic regression](./binary_logistic_regression.py) (weight+bias -> sigmoid -> gradient descend -> loss)
     - [decision tree]
-    - [BatchNorm]
-    - [LayerNorm]
+    - [BatchNorm](./batch_normalization.py) $BN(x_i)=\gamma(\frac{x_i-\mu_B}{\sqrt(\sigma_B^2+\epsilon)})+\beta$
+    - [LayerNorm](./layer_normalization.py)
     - [Attention]
     - [AE]
-    - [Dropout]
+    - [Dropout](./dropout.py)
 
 - Activation:
     - [Softmax](./softmax.py) $softmax(x_i) = \frac{e^{x_i}}{\sum_je^{x_j}}$, $i,j$ is class not sample
@@ -47,8 +47,15 @@
     - Zero, One
         - np.ones(shape, dtype=None)
         - np.ones_like(a, dtype=None)
+        - np.zeros((1, shape[0]))
     - Random
         - np.random.rand(*shape)
+    - Math
+        - np.mean(a, axis=b, keep_dim=True)
+        - np.sum(a)
+        - np.sqrt(a)
 - PyTorch
+- Counter
+    - Counter.most_common(n) -> getting the n most common words (so it is a list)
 
     
