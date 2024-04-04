@@ -9,12 +9,12 @@
     - [stratified sampling](./stratified_sampling.py)
 
 - Model:
-    - [KNN](./k_nearest_neighbors.py)
-    - [k-means]
+    - [KNN](./k_nearest_neighbors.py) supervised learning, revise label
+    - [k-means](./k_means.py) unsupervised learning, generate k centroids
     - [binary logistic regression](./binary_logistic_regression.py) (weight+bias -> sigmoid -> gradient descend -> loss)
     - [decision tree]
-    - [BatchNorm](./batch_normalization.py) $BN(x_i)=\gamma(\frac{x_i-\mu_B}{\sqrt(\sigma_B^2+\epsilon)})+\beta$
-    - [LayerNorm](./layer_normalization.py)
+    - [BatchNorm](./batch_normalization.py) $BN(x_i)=\gamma(\frac{x_i-\mu_B}{\sqrt(\sigma_B^2+\epsilon)})+\beta$ (mean(axis=0))
+    - [LayerNorm](./layer_normalization.py) (mean(axis=1))
     - [Attention]
     - [AE]
     - [Dropout](./dropout.py)
@@ -54,6 +54,9 @@
         - np.mean(a, axis=b, keep_dim=True)
         - np.sum(a)
         - np.sqrt(a)
+    - Indexing
+        - np.array can index np.array
+        - np.argmax(array, axis=0), np.argmax() -> can be used for further index
 - PyTorch
 - Counter
     - Counter.most_common(n) -> getting the n most common words (so it is a list)
