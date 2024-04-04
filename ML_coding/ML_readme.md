@@ -44,6 +44,11 @@
     - `shuffle(x[, random])`: shuffle x
     - `sample(x, k)`: pick from x k elements and form a new list
 - Numpy
+    - Zero, One
+        - np.ones(shape, dtype=None)
+        - np.ones_like(a, dtype=None)
+    - Random
+        - np.random.rand(*shape)
 - PyTorch
 
     
