@@ -45,20 +45,20 @@
     - `sample(x, k)`: pick from x k elements and form a new list
 - Numpy
     - Zero, One
-        - np.ones(shape, dtype=None)
-        - np.ones_like(a, dtype=None)
-        - np.zeros((1, shape[0]))
+        - `np.ones(shape, dtype=None)`
+        - `np.ones_like(a, dtype=None)`
+        - `np.zeros((1, shape[0]))`
     - Random
-        - np.random.rand(*shape)
+        - `np.random.rand(*shape)`
     - Math
-        - np.mean(a, axis=b, keep_dim=True)
-        - np.sum(a)
-        - np.sqrt(a)
+        - `np.mean(a, axis=b, keep_dim=True)`
+        - `np.sum(a)`
+        - `np.sqrt(a)`
     - Indexing
-        - np.array can index np.array
-        - np.argmax(array, axis=0), np.argmax() -> can be used for further index
+        - `np.array` can index np.array
+        - `np.argmax(array, axis=0)`, `np.argmin()` -> can be used for further index
 - PyTorch
 - Counter
-    - Counter.most_common(n) -> getting the n most common words (so it is a list)
+    - `Counter.most_common(n)` -> getting the n most common words (so it is a list)
 
     
