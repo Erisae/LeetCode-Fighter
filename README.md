@@ -51,6 +51,8 @@
 - xxx条件数字个数/转换成连通区间个数检测
     - 🟡 128. Longest Consecutive Sequence
     - 🟡 [947. Most Stones Removed with Same Row or Column](./947.%20Most%20Stones%20Removed%20with%20Same%20Row%20or%20Column.py)
+- path in tree
+    - 🔴 [2421. Number of Good Paths](./2421.%20Number%20of%20Good%20Paths.py), 对value聚合->从大到小union->neighbor按照条件union->统计连同个数
 
 ---------
 
@@ -206,7 +208,7 @@
 ##### 应用场景
 - Word search
     - 🟡 [1268. Search Suggestions System](./1268.%20Search%20Suggestions%20System.py)
-    - 🔴 [745. Prefix and Suffix Search](./745.%20Prefix%20and%20Suffix%20Search.py) prefix+suffix tries
+    - 🔴 [745. Prefix and Suffix Search](./745.%20Prefix%20and%20Suffix%20Search.py) prefix+suffix tries+set, paired trie, suffix wrapped trie
 -------------
 
 ### Prefix/Suffix
