@@ -204,9 +204,9 @@
 
 ### Trie
 ##### 应用场景
-- sdfds
+- Word search
     - 🟡 [1268. Search Suggestions System](./1268.%20Search%20Suggestions%20System.py)
-
+    - 🔴 [745. Prefix and Suffix Search](./745.%20Prefix%20and%20Suffix%20Search.py) prefix+suffix tries
 -------------
 
 ### Prefix/Suffix
