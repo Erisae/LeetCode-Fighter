@@ -71,6 +71,8 @@
 - 向后search，模拟测试，找最小/pattern, 重点是可撤回
     - 🔴 465. Optimal Account Balancing [(lc)](https://leetcode.com/problems/optimal-account-balancing/description/)
     - 🟡 79. Word Search [(lc)](https://leetcode.com/problems/word-search/description/) (search可以回退->visited)
+- 找到所有可能
+    - 🔴 282. Expression Add Operators
 
 ---------
 
@@ -85,6 +87,7 @@
     - 🟡 253. Meeting Rooms II (+heap)
     - 🟡 621. Task Scheduler (+heap)
     - 🟡 [767. Reorganize String](./767.%20Reorganize%20String.py) (+heap) 区间:相邻，时间:freeze1
+    - 🔴 [358. Rearrange String k Distance Apart](./358.%20Rearrange%20String%20k%20Distance%20Apart.py) (+heap) 有确定的数量，freeze时间k
 - 按照让接下来有更多机会选择
     - 🟡 45. Jump Game II (跳到reach最大的 -> 下一个有更大可选空间)
     - 🟡 435. Non-overlapping Intervals (按照end time最早的选择 -> 下一个有更大可选空间)
@@ -110,6 +113,8 @@
 - 函数修饰器@cache,DP已经遍历过的输入&输出
     - 🔴 [2050. Parallel Courses III](./2050.%20Parallel%20Courses%20III.py) 多次树遍历
     - 🟡 [418. Sentence Screen Fitting](./418.%20Sentence%20Screen%20Fitting.py) 多次开始单词为x的函数
+- 记录dynamic window/prefix-suffix
+    - 🟡 [926. Flip String to Monotone Increasing](./926.%20Flip%20String%20to%20Monotone%20Increasing.py)只有一个分界线，滑动分界线看最小个数
 
 ---------
 
@@ -147,6 +152,7 @@
     - 🟡  [503. Next Greater Element II](./503.%20Next%20Greater%20Element%20II.py) 右边第一个最大的可以到前面->从右到左遍历并且min-mono->pop直到比当前大的就是next -> 来两遍
 - parenthesis
     - 🟡 [1249. Minimum Remove to Make Valid Parentheses](./1249.%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses.py)
+    - 🟡 [921. Minimum Add to Make Parentheses Valid](./921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid.py) ()都push的stack
 
 ---------
 
@@ -180,7 +186,9 @@
     - 🟡 [1382. Balance a Binary Search Tree](./1382.%20Balance%20a%20Binary%20Search%20Tree.py) 从inorder(increasing)构建平衡BST，直接中间split
 - path/substree
     - 🟡 [652. Find Duplicate Subtrees](./652.%20Find%20Duplicate%20Subtrees.py) (+hash)
-    - 🔴 [2791. Count Paths That Can Form a Palindrome in a Tree](./2791.%20Count%20Paths%20That%20Can%20Form%20a%20Palindrome%20in%20a%20Tree.py) (+hash +bitmap)
+    - 🔴 [2791. Count Paths That Can Form a Palindrome in a Tree](./2791.%20Count%20Paths%20That%20Can%20Form%20a%20Palindrome%20in%20a%20Tree.py) (+hash +bitmap)\
+- Islands
+    - 🔴 [827. Making A Large Island](./827.%20Making%20A%20Large%20Island.py)(改原始值，1->岛的index，用index存岛大小)
 
 -----------
 
@@ -209,6 +217,8 @@
 - Word search
     - 🟡 [1268. Search Suggestions System](./1268.%20Search%20Suggestions%20System.py)
     - 🔴 [745. Prefix and Suffix Search](./745.%20Prefix%20and%20Suffix%20Search.py) prefix+suffix tries+set, paired trie, suffix wrapped trie
+- Similar DS
+    - 🔴 [588. Design In-Memory File System](./588.%20Design%20In-Memory%20File%20System.py)
 -------------
 
 ### Prefix/Suffix
